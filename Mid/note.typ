@@ -443,7 +443,7 @@ parent(你爸, 你). # 你爸是你的父母之一
 female(你媽)
 
 # Rules
-mather(X, Y) :- parent(你媽, 你), female(你媽).
+mother(X, Y) :- parent(X, Y), female(X).
 sister(X, Y) :- parent(你媽, X), parent(你媽, Y), X \= Y.
 
 # Queries
